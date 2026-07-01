@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foundations — Faircreek Church</title>
+<meta name="description" content="Foundations — an adult spiritual formation teaching roadmap from Faircreek Church. Four classes of three weeks each, guiding adults through the essentials of following Jesus." />
+<link rel="icon" href="https://faircreek.org/mt-content/uploads/2022/09/favicon.png" />
+<meta property="og:title" content="Foundations — Faircreek Church" />
+<meta property="og:description" content="An adult spiritual formation teaching roadmap: four classes, twelve weeks, the essentials of following Jesus." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    /* Faircreek Church brand */
+    --orange:#ef7d10; --orange-lt:#f29842; --orange-dk:#d96c07;
+    --navy:#26303f; --slate:#33475b; --slate-lt:#8d9db7;
+    --ink:#26303f; --muted:#5f6c7b; --line:#e6eaef; --bg:#f5f7fa; --card:#ffffff;
+    --u1:#ef7d10; --u2:#3f6d8e; --u3:#4f8a72; --u4:#2f3e57;
+    --head:'Poppins',-apple-system,BlinkMacSystemFont,sans-serif;
+    --body:'Montserrat',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    --shadow:0 1px 2px rgba(20,30,45,.06),0 10px 26px rgba(20,30,45,.07);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,h5,h6,.head{font-family:var(--head)}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  /* Top brand bar */
+  .brandbar{background:var(--navy);border-bottom:3px solid var(--orange)}
+  .brandbar .wrap{display:flex;align-items:center;gap:16px;height:74px}
+  .brandbar img.logo{height:34px;width:auto;display:block}
+  .brandbar .logofallback{display:none;color:#fff;font-family:var(--head);font-weight:800;
+    letter-spacing:.02em;font-size:22px}
+  .brandbar .divider{width:1px;height:26px;background:rgba(255,255,255,.22)}
+  .brandbar .cname{color:#fff;font-family:var(--head);font-weight:600;font-size:15px;letter-spacing:.02em}
+  .brandbar .spacer{flex:1}
+  .brandbar .tag{color:var(--orange-lt);font-family:var(--head);font-weight:700;font-size:12px;
+    letter-spacing:.18em;text-transform:uppercase}
+
+  /* Hero */
+  header.hero{position:relative;color:#fff;overflow:hidden;
+    background:linear-gradient(150deg,#1f2836 0%,#2b3a4e 52%,#3a5169 100%);padding:66px 0 74px}
+  header.hero::before{content:"";position:absolute;inset:0;
+    background:radial-gradient(900px 280px at 88% -8%,rgba(239,125,16,.28),transparent 60%);pointer-events:none}
+  header.hero::after{content:"FOR";position:absolute;right:-10px;bottom:-38px;font-family:var(--head);
+    font-weight:800;font-size:230px;color:rgba(255,255,255,.045);line-height:1;pointer-events:none;letter-spacing:-.04em}
+  .hero .wrap{position:relative;z-index:1}
+  .eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:12px;font-weight:700;
+    color:var(--orange-lt);margin:0 0 16px;font-family:var(--head)}
+  header.hero h1{font-size:clamp(38px,6.4vw,66px);line-height:1;margin:0 0 16px;font-weight:800;letter-spacing:-.01em}
+  header.hero p.sub{font-size:clamp(16px,2.3vw,20px);max-width:660px;margin:0 0 28px;color:#dbe4ee;line-height:1.5}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px}
+  .pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+    padding:8px 15px;border-radius:999px;font-size:13px;font-weight:600;font-family:var(--head);backdrop-filter:blur(4px)}
+  .pill b{color:var(--orange-lt);font-weight:700}
+
+  section{padding:54px 0}
+  .lead{font-size:18px;color:var(--muted);max-width:780px;margin:0 auto;text-align:center;line-height:1.6}
+  h2.section-title{text-align:center;font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--orange-dk);font-weight:700;margin:0 0 8px;font-family:var(--head)}
+  .section-sub{text-align:center;color:var(--muted);margin:0 auto 34px;max-width:640px;font-size:15px}
+
+  /* Journey rail */
+  .journey{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+  .stop{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;
+    box-shadow:var(--shadow);text-decoration:none;display:block;transition:transform .15s,box-shadow .15s;
+    border-top:4px solid var(--c)}
+  .stop:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(20,30,45,.13)}
+  .stop .num{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;
+    font-family:var(--head);font-weight:800;color:#fff;background:var(--c);font-size:16px;margin-bottom:13px}
+  .stop h3{margin:0 0 8px;font-size:17px;line-height:1.25;font-weight:700}
+  .stop p{margin:0;color:var(--muted);font-size:13.5px}
+  .stop .wk{margin-top:14px;font-size:11.5px;font-weight:700;color:var(--c);letter-spacing:.03em;
+    text-transform:uppercase;font-family:var(--head)}
+
+  /* Unit blocks */
+  .unit{margin:0 0 16px;border-radius:18px;overflow:hidden;background:var(--card);
+    border:1px solid var(--line);box-shadow:var(--shadow)}
+  .unit-head{padding:26px;color:#fff;display:flex;align-items:center;gap:18px;background:var(--c);position:relative;overflow:hidden}
+  .unit-head::after{content:"";position:absolute;right:-30px;top:-30px;width:160px;height:160px;
+    border-radius:50%;background:rgba(255,255,255,.07)}
+  .unit-head .badge{min-width:54px;height:54px;border-radius:13px;background:rgba(255,255,255,.2);
+    display:grid;place-items:center;font-family:var(--head);font-weight:800;font-size:22px;border:1px solid rgba(255,255,255,.3);z-index:1}
+  .unit-head .ht{z-index:1}
+  .unit-head h3{margin:0;font-size:23px;font-weight:800}
+  .unit-head .ct{font-size:12px;opacity:.92;letter-spacing:.15em;text-transform:uppercase;font-weight:700;font-family:var(--head)}
+  .unit-head p{margin:6px 0 0;font-size:14px;opacity:.96;max-width:730px;line-height:1.5}
+  .unit-body{padding:10px 18px 18px}
+
+  /* Week accordions */
+  .week{border-bottom:1px solid var(--line)}
+  .week:last-child{border-bottom:none}
+  .week-btn{width:100%;background:none;border:none;cursor:pointer;text-align:left;
+    padding:18px 8px;display:flex;align-items:center;gap:15px;font-family:var(--body);color:var(--ink)}
+  .week-btn:hover{background:#fafbfc}
+  .weektag{font-family:var(--head);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:#fff;background:var(--c);border-radius:7px;padding:6px 10px;white-space:nowrap}
+  .week-btn h4{margin:0;font-size:17.5px;font-weight:700;flex:0 0 auto}
+  .week-btn .bl{margin:0;color:var(--muted);font-size:14px;flex:1;min-width:0}
+  .chev{margin-left:auto;transition:transform .2s;color:var(--slate-lt);flex:0 0 auto}
+  .week.open .chev{transform:rotate(90deg)}
+  .panel{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .panel-inner{padding:4px 8px 28px}
+
+  .bigpic{background:var(--bg);border-left:3px solid var(--c);padding:13px 16px;border-radius:0 10px 10px 0;
+    color:var(--ink);font-size:14.5px;margin:0 0 20px}
+
+  .sessions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 22px}
+  .sess{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff}
+  .sess .sh{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:8px}
+  .sess .sn{font-family:var(--head);font-size:11px;font-weight:700;color:var(--c);letter-spacing:.05em;text-transform:uppercase}
+  .sess .len{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .sess h5{margin:0 0 6px;font-size:15px;font-weight:600}
+  .sess p{margin:0;font-size:13px;color:var(--muted);line-height:1.55}
+
+  .subcols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .block h6{margin:0 0 10px;font-family:var(--head);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .verses{display:flex;flex-wrap:wrap;gap:7px}
+  .verse{font-size:12.5px;background:#fff7ef;border:1px solid #f6d9b8;border-radius:6px;
+    padding:4px 9px;font-weight:600;color:var(--orange-dk)}
+  ul.qs{margin:0;padding:0;list-style:none}
+  ul.qs li{position:relative;padding:0 0 11px 20px;font-size:13.5px;color:var(--ink);line-height:1.55}
+  ul.qs li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--c)}
+  .botline{margin-top:18px;background:var(--c);color:#fff;border-radius:10px;padding:13px 16px;font-size:14.5px;font-weight:600}
+  .botline span{opacity:.82;font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:3px}
+
+  /* How it works */
+  .how{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .howcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:var(--shadow);text-align:center}
+  .howcard .k{width:44px;height:44px;margin:0 auto 12px;border-radius:50%;background:var(--orange);color:#fff;
+    font-family:var(--head);font-weight:800;font-size:20px;display:grid;place-items:center}
+  .howcard h4{margin:0 0 6px;font-size:15px;font-weight:600}
+  .howcard p{margin:0;font-size:13.5px;color:var(--muted)}
+
+  /* CTA */
+  .cta{background:linear-gradient(150deg,#1f2836,#324863);color:#fff;text-align:center;border-radius:20px;padding:44px 26px;position:relative;overflow:hidden}
+  .cta::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 50% -20%,rgba(239,125,16,.3),transparent 60%)}
+  .cta h3{position:relative;font-size:26px;margin:0 0 10px;font-weight:800}
+  .cta p{position:relative;color:#d7e0ea;margin:0 0 22px;max-width:520px;margin-inline:auto}
+  .btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-family:var(--head);
+    font-weight:600;padding:13px 30px;border-radius:28px;font-size:15px;position:relative;transition:background .15s,transform .15s}
+  .btn:hover{background:var(--orange-dk);transform:translateY(-1px)}
+
+  footer{background:var(--navy);color:#c2ccd8;padding:40px 0;font-size:13.5px}
+  footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:18px;justify-content:space-between}
+  footer img{height:26px}
+  footer .fnav a{color:#aebccb;text-decoration:none;margin-left:16px}
+  footer .fnav a:hover{color:var(--orange-lt)}
+  footer .addr{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:16px;color:#8a97a6;font-size:12.5px}
+
+  @media(max-width:860px){
+    .journey{grid-template-columns:repeat(2,1fr)}
+    .sessions{grid-template-columns:1fr}
+    .subcols{grid-template-columns:1fr}
+    .how{grid-template-columns:repeat(2,1fr)}
+    .week-btn{flex-wrap:wrap}
+    .week-btn .bl{flex-basis:100%;order:3}
+    .brandbar .tag{display:none}
+  }
+  @media(max-width:520px){.journey,.how{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="brandbar">
+  <div class="wrap">
+    <img class="logo" src="https://faircreek.org/mt-content/uploads/2022/09/faircreek_horizontal_white.png"
+         alt="Faircreek Church" onerror="this.style.display='none';document.getElementById('lf').style.display='inline'" />
+    <span class="logofallback" id="lf">FAIRCREEK</span>
+    <span class="spacer"></span>
+    <span class="tag">Adult Spiritual Formation</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Faircreek Church · Foundations</p>
+    <h1 id="t"></h1>
+    <p class="sub" id="s"></p>
+    <div class="meta-row">
+      <span class="pill"><b>4</b>&nbsp; Classes</span>
+      <span class="pill"><b>12</b>&nbsp; Weeks</span>
+      <span class="pill"><b>36</b>&nbsp; Teaching Sessions</span>
+      <span class="pill"><b>~90</b>&nbsp; min / week</span>
+    </div>
+  </div>
+</header>
+
+<section id="overview">
+  <div class="wrap"><p class="lead" id="intro"></p></div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="section-title">The Journey</h2>
+    <p class="section-sub">Four classes, taken in order, walk you from first steps with Jesus to lasting spiritual habits.</p>
+    <div class="journey" id="journey"></div>
+  </div>
+</section>
+
+<section style="padding-top:8px">
+  <div class="wrap" id="units"></div>
+</section>
+
+<section style="background:#eef1f5">
+  <div class="wrap">
+    <h2 class="section-title">How Each Week Runs</h2>
+    <p class="section-sub">A simple, repeatable rhythm built for about 90 minutes of class time.</p>
+    <div class="how">
+      <div class="howcard"><div class="k">1</div><h4>Welcome &amp; Session One</h4><p>The facilitator sets up the class and introduces the first teaching video.</p></div>
+      <div class="howcard"><div class="k">2</div><h4>Watch &amp; Discuss</h4><p>Three short videos, each followed by table discussion using the guided questions.</p></div>
+      <div class="howcard"><div class="k">3</div><h4>Land the Point</h4><p>Every week drives toward one clear bottom line worth remembering.</p></div>
+      <div class="howcard"><div class="k">4</div><h4>Wrap Up</h4><p>Close, recap, and point toward next week's step in the roadmap.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h3>Ready to take a next step?</h3>
+      <p>Foundations is for anyone — exploring, just getting started, or returning to the basics of following Jesus.</p>
+      <a class="btn" href="https://faircreek.org/connect-with-us/" target="_blank" rel="noopener">Connect With Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="https://faircreek.org/mt-content/uploads/2022/09/faircreek_horizontal_white.png" alt="Faircreek Church" />
+    <div class="fnav">
+      <a href="https://faircreek.org/" target="_blank" rel="noopener">Home</a>
+      <a href="https://faircreek.org/new-here/" target="_blank" rel="noopener">New Here?</a>
+      <a href="https://www.youtube.com/@FaircreekChurch" target="_blank" rel="noopener">Watch</a>
+      <a href="https://faircreek.org/connect-with-us/" target="_blank" rel="noopener">Connect</a>
+    </div>
+    <div class="addr">
+      <strong>Foundations</strong> — Adult Spiritual Formation Teaching Roadmap &nbsp;·&nbsp;
+      Faircreek Church, 2400 Faircreek Ridge Drive, Fairborn, OH &nbsp;·&nbsp; hello@faircreek.org<br/>
+      Content summarized from the series facilitator guides, which remain the authoritative source for full run sheets, timing, and slide notes.
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+  const R = window.ROADMAP;
+  document.getElementById("t").textContent = R.title;
+  document.getElementById("s").textContent = R.subtitle;
+  document.getElementById("intro").textContent = R.intro;
+
+  const jr = document.getElementById("journey");
+  R.units.forEach(u=>{
+    const a=document.createElement("a");
+    a.className="stop"; a.href="#unit"+u.n; a.style.setProperty("--c",u.color);
+    a.innerHTML=`<div class="num">${u.n}</div><h3>${u.title}</h3><p>${u.summary}</p>
+      <div class="wk">${u.weeks.map(w=>w.title).join(" · ")}</div>`;
+    jr.appendChild(a);
+  });
+
+  const uc = document.getElementById("units");
+  R.units.forEach(u=>{
+    const unit=document.createElement("div");
+    unit.className="unit"; unit.id="unit"+u.n; unit.style.setProperty("--c",u.color);
+    let weeksHtml="";
+    u.weeks.forEach(w=>{
+      const sess=w.sessions.map((s,si)=>`
+        <div class="sess">
+          <div class="sh"><span class="sn">Session ${si+1}</span><span class="len">${s.len}</span></div>
+          <h5>${s.title}</h5><p>${s.note}</p>
+        </div>`).join("");
+      const verses=w.verses.map(v=>`<span class="verse">${v}</span>`).join("");
+      const qs=w.questions.map(q=>`<li>${q}</li>`).join("");
+      weeksHtml+=`
+        <div class="week">
+          <button class="week-btn" aria-expanded="false">
+            <span class="weektag">Week ${w.n}</span>
+            <h4>${w.title}</h4>
+            <p class="bl">${w.bottomLine}</p>
+            <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <div class="panel"><div class="panel-inner">
+            <p class="bigpic">${w.bigPicture}</p>
+            <div class="sessions">${sess}</div>
+            <div class="subcols">
+              <div class="block"><h6>Scripture</h6><div class="verses">${verses}</div></div>
+              <div class="block"><h6>Sample Discussion</h6><ul class="qs">${qs}</ul></div>
+            </div>
+            <div class="botline"><span>Bottom Line</span>${w.bottomLine}</div>
+          </div></div>
+        </div>`;
+    });
+    unit.innerHTML=`
+      <div class="unit-head">
+        <div class="badge">${u.n}</div>
+        <div class="ht"><div class="ct">Class ${u.n} · 3 Weeks</div><h3>${u.title}</h3><p>${u.summary}</p></div>
+      </div>
+      <div class="unit-body">${weeksHtml}</div>`;
+    uc.appendChild(unit);
+  });
+
+  document.querySelectorAll(".week-btn").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const week=btn.parentElement, panel=btn.nextElementSibling;
+      const open=week.classList.toggle("open");
+      btn.setAttribute("aria-expanded",open);
+      panel.style.maxHeight = open ? panel.scrollHeight+"px" : "0";
+    });
+  });
+  window.addEventListener("resize",()=>{
+    document.querySelectorAll(".week.open .panel").forEach(p=>p.style.maxHeight=p.scrollHeight+"px");
+  });
+</script>
+</body>
+</html>
