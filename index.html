@@ -153,16 +153,43 @@
   footer .fnav a:hover{color:var(--orange-lt)}
   footer .addr{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:16px;color:#8a97a6;font-size:12.5px}
 
+  /* Teaching Teams */
+  .teams-intro{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 34px;font-size:15px}
+  .teamgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .team{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;
+    box-shadow:var(--shadow);display:flex;align-items:center;gap:16px;transition:transform .15s,box-shadow .15s}
+  .team:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(20,30,45,.13)}
+  .team .avatar{flex:0 0 auto;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+    font-family:var(--head);font-weight:800;font-size:16px;color:#fff;background:var(--c);letter-spacing:.02em}
+  .team h4{margin:0 0 3px;font-size:16px;font-weight:700;line-height:1.2}
+  .team .role{margin:0;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--c);font-family:var(--head)}
+  .team .tnote{margin:5px 0 0;font-size:12.5px;color:var(--muted)}
+  .team .tflag{display:inline-block;margin-top:7px;font-family:var(--head);font-size:10px;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;
+    background:#fff4e0;color:#b7791f;border:1px solid #f2dca6}
+  /* Unconfirmed / tentative team */
+  .team.tentative{background:#fffdf8;border-style:dashed;border-color:#ecd9b3}
+  .team.tentative .avatar{opacity:.72}
+  /* Open slot / recruiting card */
+  .team.open{background:#fff;border:2px dashed #f6d9b8;box-shadow:none}
+  .team.open .avatar{background:#fff7ef;color:var(--orange);border:2px dashed #f0c18a;font-size:26px;font-weight:600}
+  .team.open h4{color:var(--orange-dk)}
+  .team.open .role{color:var(--orange-dk)}
+  .teams-cta{text-align:center;margin:32px auto 0;max-width:560px}
+  .teams-cta p{color:var(--muted);font-size:15px;margin:0 0 18px}
+
   @media(max-width:860px){
     .journey{grid-template-columns:repeat(2,1fr)}
     .sessions{grid-template-columns:1fr}
     .subcols{grid-template-columns:1fr}
     .how{grid-template-columns:repeat(2,1fr)}
+    .teamgrid{grid-template-columns:repeat(2,1fr)}
     .week-btn{flex-wrap:wrap}
     .week-btn .bl{flex-basis:100%;order:3}
     .brandbar .tag{display:none}
   }
-  @media(max-width:520px){.journey,.how{grid-template-columns:1fr}}
+  @media(max-width:520px){.journey,.how,.teamgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -216,6 +243,16 @@
       <div class="howcard"><div class="k">3</div><h4>Land the Point</h4><p>Every week drives toward one clear bottom line worth remembering.</p></div>
       <div class="howcard"><div class="k">4</div><h4>Wrap Up</h4><p>Close, recap, and point toward next week's step in the roadmap.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="teams">
+  <div class="wrap">
+    <h2 class="section-title">Teaching Teams</h2>
+    <p class="section-sub">The couples and leaders who host our classes and guide the conversation.</p>
+    <p class="teams-intro" id="teamsIntro"></p>
+    <div class="teamgrid" id="teamgrid"></div>
+    <div class="teams-cta" id="teamsCta"></div>
   </div>
 </section>
 
@@ -302,6 +339,35 @@
       <div class="unit-body">${weeksHtml}</div>`;
     uc.appendChild(unit);
   });
+
+  // Teaching Teams
+  if (R.teams) {
+    const unitColor = n => (R.units.find(u=>u.n===n)||{}).color;
+    const palette = ["#ef7d10","#3f6d8e","#4f8a72","#2f3e57","#b7791f","#7d5ba6"];
+    document.getElementById("teamsIntro").textContent = R.teams.intro || "";
+    const tg = document.getElementById("teamgrid");
+    let pi = 0;
+    R.teams.list.forEach(t=>{
+      const el = document.createElement("div");
+      const open = t.status === "open";
+      const tentative = t.status === "unconfirmed";
+      el.className = "team" + (open ? " open" : tentative ? " tentative" : "");
+      const color = open ? "var(--orange)" : (t.unit ? unitColor(t.unit) : palette[pi++ % palette.length]);
+      el.style.setProperty("--c", color);
+      const role = open ? "Open Role" : "Teaching Team";
+      const flag = tentative ? `<span class="tflag">Unconfirmed</span>` : "";
+      el.innerHTML =
+        `<div class="avatar">${t.initials||""}</div>
+         <div><p class="role">${role}</p><h4>${t.name}</h4>` +
+        (t.note ? `<p class="tnote">${t.note}</p>` : "") + flag + `</div>`;
+      tg.appendChild(el);
+    });
+    if (R.teams.cta) {
+      document.getElementById("teamsCta").innerHTML =
+        `<p>${R.teams.cta.text}</p>
+         <a class="btn" href="${R.teams.cta.href}" target="_blank" rel="noopener">${R.teams.cta.label}</a>`;
+    }
+  }
 
   document.querySelectorAll(".week-btn").forEach(btn=>{
     btn.addEventListener("click",()=>{

@@ -242,4 +242,30 @@ window.ROADMAP = {
       ],
     },
   ],
+
+  // Teaching Teams — the couples and leaders who host classes and guide
+  // table discussion. Add, edit, or reassign teams here; index.html renders them.
+  teams: {
+    intro:
+      "Foundations is led by teaching teams — couples and leaders who host a class, " +
+      "introduce each session, and walk alongside the group through the discussion. " +
+      "We’re always making room for more.",
+    // status: "serving" (confirmed team), "unconfirmed" (invited/tentative),
+    //         or "open" (a slot we’re inviting people into)
+    // unit: optional class number (1–4) to color-match and label an assignment; null = flexible
+    list: [
+      { name: "Brad & Lynne Mallare",      initials: "B·L", status: "serving",     unit: null, note: "Serving where needed" },
+      { name: "Steve & Colleen Thorsen",   initials: "S·C", status: "serving",     unit: null, note: "Serving where needed" },
+      { name: "Bruce & Shirley Binder",    initials: "B·S", status: "unconfirmed", unit: null, note: "Invitation pending" },
+      { name: "Larry & Diane Reid",        initials: "L·D", status: "unconfirmed", unit: null, note: "Invitation pending" },
+      { name: "Matt & Tina Stonecypher",   initials: "M·T", status: "unconfirmed", unit: null, note: "Invitation pending" },
+      { name: "Josh & Tammi Cernetic",     initials: "J·T", status: "unconfirmed", unit: null, note: "Invitation pending" },
+      { name: "Your Team Here",            initials: "+",   status: "open",        unit: null, note: "We’re inviting new teaching teams" },
+    ],
+    cta: {
+      text: "Interested in serving on a teaching team? We’d love to help you take a next step.",
+      label: "Join a Teaching Team",
+      href: "https://faircreek.org/connect-with-us/",
+    },
+  },
 };
