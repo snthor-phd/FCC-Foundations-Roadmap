@@ -23,8 +23,6 @@ Each week is built the same way: three short teaching videos ("sessions"), each 
 
 - `index.html` — the roadmap site (single page, no build step)
 - `data.js` — all content (units, weeks, sessions, scripture, discussion questions), editable in plain JavaScript
-- `Faircreek_ASF_Integrated_Planning_Brief_v2.pdf` — leadership briefing aligned to the current six-course roadmap
-- `build_brief.py` — reproducible source for the Version 2 planning brief
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
 ## Publish with GitHub Pages
@@ -42,3 +40,7 @@ All teaching content lives in `data.js` as a plain object. To adjust a week, edi
 ## Source
 
 Content is summarized from the **Foundations facilitator guides from The Irresistible Church Network**. Those guides remain the authoritative source for full run sheets, timing, and slide notes.
+
+## Related
+
+- [Building an Adult Spiritual Formation Pathway](https://snthor-phd.github.io/FCC-Building-an-ASF-Pathway/) — the broader Faircreek formation plan and leadership briefing
