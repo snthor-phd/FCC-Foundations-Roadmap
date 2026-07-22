@@ -10,7 +10,7 @@ window.ROADMAP = {
     "90 minutes of class time.",
   units: [
     {
-      n: 1,
+      n: 2,
       title: "Understanding the Story of the Bible",
       color: "#a65a3a",
       summary:
@@ -67,7 +67,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 2,
+      n: 6,
       title: "How to Read the Bible Well",
       color: "#78669a",
       summary:
@@ -124,7 +124,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 3,
+      n: 1,
       title: "How to Follow Jesus",
       color: "#ef7d10",
       summary:
@@ -182,7 +182,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 4,
+      n: 3,
       title: "Understanding Who God Is",
       color: "#3f6d8e",
       summary:
@@ -239,7 +239,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 5,
+      n: 4,
       title: "Understanding Your New Identity",
       color: "#4f8a72",
       summary:
@@ -299,7 +299,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 6,
+      n: 5,
       title: "How to Establish Spiritual Habits",
       color: "#2f3e57",
       summary:
@@ -383,3 +383,7 @@ window.ROADMAP = {
     },
   },
 };
+
+// Keep the source grouped by curriculum family while presenting the recommended
+// newcomer pathway defined by each unit's sequence number.
+window.ROADMAP.units.sort((a, b) => a.n - b.n);

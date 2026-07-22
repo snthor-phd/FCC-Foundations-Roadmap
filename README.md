@@ -6,14 +6,16 @@ An interactive **Adult Spiritual Formation** teaching roadmap for **Foundations*
 
 ## The roadmap
 
+The courses can stand alone and may be offered in rotation. The table below is Faircreek's recommended newcomer pathway.
+
 | Class | Title | Weeks |
 |------|-------|-------|
-| 1 | Understanding the Story of the Bible | The Story of the Bible · The Old Testament · The New Testament |
-| 2 | How to Read the Bible Well | Bible Overview · Interpretation · Application |
-| 3 | How to Follow Jesus | The Invitation · The Way of Jesus · Clash of Kingdoms |
-| 4 | Understanding Who God Is | The Father · The Son · The Holy Spirit |
-| 5 | Understanding Your New Identity | The Way God Sees Us · Our New Reality · Our New Family |
-| 6 | How to Establish Spiritual Habits | Rebranding Spiritual Disciplines · Getting Started · Stretching Our Faith Muscles |
+| 1 | How to Follow Jesus | The Invitation · The Way of Jesus · Clash of Kingdoms |
+| 2 | Understanding the Story of the Bible | The Story of the Bible · The Old Testament · The New Testament |
+| 3 | Understanding Who God Is | The Father · The Son · The Holy Spirit |
+| 4 | Understanding Your New Identity | The Way God Sees Us · Our New Reality · Our New Family |
+| 5 | How to Establish Spiritual Habits | Rebranding Spiritual Disciplines · Getting Started · Stretching Our Faith Muscles |
+| 6 | How to Read the Bible Well | Bible Overview · Interpretation · Application |
 
 Each week is built the same way: three short teaching videos ("sessions"), each followed by table discussion, landing on one clear **bottom line**. Class time runs about 90 minutes.
 
