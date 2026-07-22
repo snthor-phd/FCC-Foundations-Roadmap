@@ -1,5 +1,5 @@
 // Foundations: Adult Spiritual Formation — Teaching Roadmap data
-// Derived from the 18 facilitator guides in this series.
+// Derived from 18 Foundations facilitator guides from The Irresistible Church Network.
 window.ROADMAP = {
   title: "Foundations",
   subtitle: "A Teaching Roadmap for Adult Spiritual Formation",

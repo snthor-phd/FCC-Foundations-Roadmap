@@ -39,4 +39,4 @@ All teaching content lives in `data.js` as a plain object. To adjust a week, edi
 
 ## Source
 
-Content is summarized from the series **facilitator guides**. Those guides remain the authoritative source for full run sheets, timing, and slide notes.
+Content is summarized from the **Foundations facilitator guides from The Irresistible Church Network**. Those guides remain the authoritative source for full run sheets, timing, and slide notes.
