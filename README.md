@@ -23,6 +23,8 @@ Each week is built the same way: three short teaching videos ("sessions"), each 
 
 - `index.html` — the roadmap site (single page, no build step)
 - `data.js` — all content (units, weeks, sessions, scripture, discussion questions), editable in plain JavaScript
+- `Faircreek_ASF_Integrated_Planning_Brief_v2.pdf` — leadership briefing aligned to the current six-course roadmap
+- `build_brief.py` — reproducible source for the Version 2 planning brief
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
 ## Publish with GitHub Pages
