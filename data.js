@@ -1,16 +1,130 @@
 // Foundations: Adult Spiritual Formation — Teaching Roadmap data
-// Derived from the 12 facilitator guides in this series.
+// Derived from the 18 facilitator guides in this series.
 window.ROADMAP = {
   title: "Foundations",
   subtitle: "A Teaching Roadmap for Adult Spiritual Formation",
   intro:
     "Foundations is a guided path for learning the essentials of following Jesus. " +
-    "It runs as four classes of three weeks each. Every week has three short teaching " +
+    "It runs as six classes of three weeks each. Every week has three short teaching " +
     "videos (called “sessions”) followed by table discussion, designed for about " +
     "90 minutes of class time.",
   units: [
     {
       n: 1,
+      title: "Understanding the Story of the Bible",
+      color: "#a65a3a",
+      summary:
+        "Begins with the Bible’s unified story: creation and rupture, God’s covenant faithfulness, the arrival of Jesus, the Spirit-empowered church, and final restoration.",
+      weeks: [
+        {
+          n: 1,
+          title: "The Story of the Bible",
+          bottomLine: "The Bible tells the story of God restoring a broken relationship with his creation.",
+          bigPicture: "Provides background on what the Bible is and introduces the unified story it tells.",
+          sessions: [
+            { title: "What’s in the Bible", len: "8:59", note: "The Bible is a collection of 66 documents, written across centuries, that together tell one unified story." },
+            { title: "The Story of the Bible", len: "10:49", note: "Introduces the central story arc and the themes that will serve as handles for the rest of the course." },
+            { title: "The Prologue", len: "7:19", note: "Creation is good, humanity chooses self-trust over God, and the promise of restoration begins." },
+          ],
+          verses: ["Genesis 1:1, 27", "Genesis 3:6, 14–15"],
+          questions: [
+            "How does seeing the Bible as one unified story change the way you approach its individual books?",
+            "Why do you think trust is central to the one rule God gave humanity in the garden?",
+          ],
+        },
+        {
+          n: 2,
+          title: "The Old Testament",
+          bottomLine: "The Old Testament shows us the faithfulness of God and points forward to Jesus.",
+          bigPicture: "Traces the story through the Old Testament: covenant, a chosen people, a recurring pattern of disobedience, and hope for a future Messiah.",
+          sessions: [
+            { title: "Old Testament Overview", len: "9:01", note: "Introduces the old covenant, the sacrificial system, and why followers of Jesus should read the Old Testament." },
+            { title: "A Chosen People", len: "7:39", note: "Explores God’s promises to Abraham and Moses and the purpose of Israel’s ancient laws." },
+            { title: "A Consistent Pattern and Future Messiah", len: "9:06", note: "Follows the cycle of self-trust and God’s faithfulness through judges, prophets, and the promise of Messiah." },
+          ],
+          verses: ["Deuteronomy 28:1–2, 9–10, 13, 58", "Judges 2:16–17", "Jeremiah 31:31–32"],
+          questions: [
+            "How does the old covenant’s conditional promise affect the way you read the Old Testament?",
+            "Where do you see the pattern of trusting ourselves instead of God repeated in the biblical story—or your own?",
+          ],
+        },
+        {
+          n: 3,
+          title: "The New Testament",
+          bottomLine: "Jesus provides the opportunity for a restored relationship with God.",
+          bigPicture: "Explores Jesus as the climax of the story, the spread of his movement through the Spirit, and the Bible’s promised restoration.",
+          sessions: [
+            { title: "The Messiah Arrives", len: "9:41", note: "Jesus fulfills the Old Testament’s hope and establishes a new covenant through his death and resurrection." },
+            { title: "The Movement Spreads", len: "11:27", note: "The Holy Spirit empowers Jesus’s followers in Acts, and the New Testament letters form the growing church." },
+            { title: "The Epilogue", len: "9:22", note: "The story moves toward final justice, renewed creation, and restored relationship with God." },
+          ],
+          verses: ["Galatians 4:4", "Acts 1:8", "2 Timothy 3:16", "Revelation 21:1–5"],
+          questions: [
+            "How does the Old Testament prepare us to understand Jesus and the new covenant?",
+            "What does it mean to live now in light of the restoration God has promised?",
+          ],
+        },
+      ],
+    },
+    {
+      n: 2,
+      title: "How to Read the Bible Well",
+      color: "#78669a",
+      summary:
+        "Builds a practical, repeatable process for reading Scripture: observation, interpretation in context, and faithful application.",
+      weeks: [
+        {
+          n: 1,
+          title: "Bible Overview",
+          bottomLine: "The Bible is an important book that you can understand.",
+          bigPicture: "Provides background on the Bible, its translations and literature, and introduces the first reading step: observation.",
+          sessions: [
+            { title: "Bible Translations", len: "8:52", note: "Explains the journey from Hebrew, Aramaic, and Greek manuscripts to readable and accurate English translations." },
+            { title: "The Bible’s Literature", len: "9:33", note: "Surveys the Bible’s different literary types and why genre matters for understanding." },
+            { title: "Observation", len: "7:46", note: "Introduces observation, interpretation, and application, beginning with careful attention to what the text says." },
+          ],
+          verses: ["Romans 5:17", "Psalm 23:4"],
+          questions: [
+            "How can reading more than one translation improve your understanding?",
+            "What details become visible when you slow down and observe before interpreting?",
+          ],
+        },
+        {
+          n: 2,
+          title: "Interpretation",
+          bottomLine: "The Bible must be read in context.",
+          bigPicture: "Explores interpretation, distinguishes old- and new-covenant promises, and practices reading verses within their context.",
+          sessions: [
+            { title: "Interpretation", len: "8:41", note: "Moves from collected observations to the author’s intended meaning." },
+            { title: "Promises, Promises", len: "5:29", note: "Distinguishes promises to ancient Israel under the old covenant from promises to followers of Jesus under the new." },
+            { title: "Context Activity", len: "3:40 (optional)", note: "Debriefs context examples; the facilitator may lead this interactively instead of using the video." },
+          ],
+          verses: ["Psalm 23:4", "Jeremiah 29:11", "Philippians 4:13"],
+          questions: [
+            "What is the difference between asking what a verse means to me and what its author meant?",
+            "How can ignoring covenant and literary context distort a biblical promise?",
+          ],
+        },
+        {
+          n: 3,
+          title: "Application",
+          bottomLine: "Doing is what makes the difference.",
+          bigPicture: "Uses Psalm 23 and the Good Samaritan to complete the process with faithful, concrete application.",
+          sessions: [
+            { title: "Application", len: "9:00", note: "Find a timeless principle, identify a personal action step, and ask questions that move insight into practice." },
+            { title: "Homework Debrief", len: "8:23 (optional)", note: "Works through observation, interpretation, and application in the Good Samaritan story; a live debrief is recommended." },
+            { title: "Encouragement", len: "4:52", note: "Reviews the process and encourages a sustainable habit of reading and responding to Scripture." },
+          ],
+          verses: ["Psalm 23:4", "Luke 10:25–37", "James 1:22"],
+          questions: [
+            "What timeless principle emerges from the Good Samaritan, and what specific action could embody it this week?",
+            "What plan will help you make careful Bible reading a sustainable habit?",
+          ],
+        },
+      ],
+    },
+    {
+      n: 3,
       title: "How to Follow Jesus",
       color: "#ef7d10",
       summary:
@@ -68,7 +182,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 2,
+      n: 4,
       title: "Understanding Who God Is",
       color: "#3f6d8e",
       summary:
@@ -113,8 +227,8 @@ window.ROADMAP = {
           bigPicture: "A brief overview of the Trinity, focusing on the role of the Holy Spirit.",
           sessions: [
             { title: "The Trinity", len: "7:28", note: "Introduces the Holy Spirit within the mystery of one God in three persons." },
-            { title: "The Roles of the Holy Spirit", len: "—", note: "The Spirit helps us understand our position as God’s children, gives wisdom, convicts of sin, gives gifts, and brings peace." },
-            { title: "Living Empowered by the Holy Spirit", len: "—", note: "Walking in step with the Spirit to live the Christian life daily." },
+            { title: "The Roles of the Holy Spirit", len: "5:24", note: "The Spirit helps us understand our position as God’s children, gives wisdom, convicts of sin, gives gifts, and brings peace." },
+            { title: "Living Empowered by the Holy Spirit", len: "8:01", note: "Walking in step with the Spirit to live the Christian life daily." },
           ],
           verses: ["Exodus 34:6–7", "John 14:6–7", "John 16:7", "Galatians 4:6–7", "Galatians 5:13–25"],
           questions: [
@@ -125,7 +239,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 3,
+      n: 5,
       title: "Understanding Your New Identity",
       color: "#4f8a72",
       summary:
@@ -155,9 +269,9 @@ window.ROADMAP = {
           bigPicture:
             "Contrasts our identity before Christ (born into sin through Adam) with our identity after Christ (reborn through Jesus). In him we are dead to sin and, through the Spirit, can live free from sin as we await eternity.",
           sessions: [
-            { title: "In Adam vs. In Christ", len: "—", note: "Two family lines: the sin we inherit in Adam versus the righteousness we receive in Christ." },
-            { title: "Empowered by the Holy Spirit", len: "—", note: "Real change comes not by our effort but by walking in step with the Spirit." },
-            { title: "Citizens of Heaven", len: "—", note: "We live as citizens of heaven, confident God will complete the work he began." },
+            { title: "In Adam vs. In Christ", len: "9:25", note: "Two family lines: the sin we inherit in Adam versus the righteousness we receive in Christ." },
+            { title: "Empowered by the Holy Spirit", len: "6:21", note: "Real change comes not by our effort but by walking in step with the Spirit." },
+            { title: "Citizens of Heaven", len: "7:17", note: "We live as citizens of heaven, confident God will complete the work he began." },
           ],
           verses: ["Romans 5:12–15", "Romans 6:6–7, 14", "Romans 8:4–5", "Philippians 1:6"],
           questions: [
@@ -185,7 +299,7 @@ window.ROADMAP = {
       ],
     },
     {
-      n: 4,
+      n: 6,
       title: "How to Establish Spiritual Habits",
       color: "#2f3e57",
       summary:
@@ -252,7 +366,7 @@ window.ROADMAP = {
       "We’re always making room for more.",
     // status: "serving" (confirmed team), "unconfirmed" (invited/tentative),
     //         or "open" (a slot we’re inviting people into)
-    // unit: optional class number (1–4) to color-match and label an assignment; null = flexible
+    // unit: optional class number (1–6) to color-match and label an assignment; null = flexible
     list: [
       { name: "Brad & Lynne Mallare",      initials: "B·L", status: "serving",     unit: null, note: "Serving where needed" },
       { name: "Steve & Colleen Thorsen",   initials: "S·C", status: "serving",     unit: null, note: "Serving where needed" },

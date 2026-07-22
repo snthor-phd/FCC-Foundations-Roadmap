@@ -1,6 +1,6 @@
 # Foundations — Faircreek Church
 
-An interactive **Adult Spiritual Formation** teaching roadmap for **Foundations**, a guided path through the essentials of following Jesus. The site presents four classes of three weeks each — 36 short teaching sessions in all — organized as a browsable journey, styled to match [Faircreek Church](https://faircreek.org)'s brand (logo, colors, and typography).
+An interactive **Adult Spiritual Formation** teaching roadmap for **Foundations**, a guided path through Scripture and the essentials of following Jesus. The site presents six classes of three weeks each — 54 short teaching sessions in all — organized as a browsable journey, styled to match [Faircreek Church](https://faircreek.org)'s brand (logo, colors, and typography).
 
 **Live site:** _enable GitHub Pages (see below) and your URL will be_ `https://<username>.github.io/<repo>/`
 
@@ -8,10 +8,12 @@ An interactive **Adult Spiritual Formation** teaching roadmap for **Foundations*
 
 | Class | Title | Weeks |
 |------|-------|-------|
-| 1 | How to Follow Jesus | The Invitation · The Way of Jesus · Clash of Kingdoms |
-| 2 | Understanding Who God Is | The Father · The Son · The Holy Spirit |
-| 3 | Understanding Your New Identity | The Way God Sees Us · Our New Reality · Our New Family |
-| 4 | How to Establish Spiritual Habits | Rebranding Spiritual Disciplines · Getting Started · Stretching Our Faith Muscles |
+| 1 | Understanding the Story of the Bible | The Story of the Bible · The Old Testament · The New Testament |
+| 2 | How to Read the Bible Well | Bible Overview · Interpretation · Application |
+| 3 | How to Follow Jesus | The Invitation · The Way of Jesus · Clash of Kingdoms |
+| 4 | Understanding Who God Is | The Father · The Son · The Holy Spirit |
+| 5 | Understanding Your New Identity | The Way God Sees Us · Our New Reality · Our New Family |
+| 6 | How to Establish Spiritual Habits | Rebranding Spiritual Disciplines · Getting Started · Stretching Our Faith Muscles |
 
 Each week is built the same way: three short teaching videos ("sessions"), each followed by table discussion, landing on one clear **bottom line**. Class time runs about 90 minutes.
 
