@@ -2,7 +2,7 @@
 
 An interactive **Adult Spiritual Formation** teaching roadmap for **Foundations**, a guided path through Scripture and the essentials of following Jesus. The site presents six classes of three weeks each — 54 short teaching sessions in all — organized as a browsable journey, styled to match [Faircreek Church](https://faircreek.org)'s brand (logo, colors, and typography).
 
-**Live site:** _enable GitHub Pages (see below) and your URL will be_ `https://<username>.github.io/<repo>/`
+**Live site:** https://snthor-phd.github.io/FCC-Foundations-Roadmap/
 
 ## The roadmap
 
@@ -23,6 +23,8 @@ Each week is built the same way: three short teaching videos ("sessions"), each 
 
 - `index.html` — the roadmap site (single page, no build step)
 - `data.js` — all content (units, weeks, sessions, scripture, discussion questions), editable in plain JavaScript
+- `ASF-Exploratory-Meeting-Invite.pdf` — Pastor Matt's invitation to the exploratory meeting (When / Where / RSVP left as write-in lines)
+- `ASF-Exploratory-Meeting-Invite.html` — editable source for the invite; rebuild with `python3 -m weasyprint ASF-Exploratory-Meeting-Invite.html ASF-Exploratory-Meeting-Invite.pdf`
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
 ## Publish with GitHub Pages

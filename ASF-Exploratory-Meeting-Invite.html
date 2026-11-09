@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>ASF Exploratory Meeting Invitation — Faircreek Church</title>
+<!--
+  Source for ASF-Exploratory-Meeting-Invite.pdf (one US Letter page).
+  Rebuild:  python3 -m weasyprint ASF-Exploratory-Meeting-Invite.html ASF-Exploratory-Meeting-Invite.pdf
+  When / Where / RSVP are left as write-in lines on purpose; fill them in below if you'd rather print them.
+-->
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Liberation Sans", Arial, sans-serif; color: #26303f; font-size: 10pt; line-height: 1.5; }
+  h1, h2, h3, .brand, .label, .yr, .pr, .sig { font-family: "Poppins", sans-serif; font-weight: 700; }
+
+  .bar { background: #26303f; color: #fff; padding: 12pt 36pt 11pt; border-bottom: 2.5pt solid #ef7d10; display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-size: 13pt; letter-spacing: .3pt; }
+  .brand span { color: #ef7d10; }
+  .bar .tag { color: #ef7d10; font-size: 6.5pt; letter-spacing: 1.4pt; font-family: "Poppins", sans-serif; font-weight: 700; }
+
+  main { padding: 14pt 36pt 0; }
+  .eyebrow { color: #ef7d10; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 6.8pt; letter-spacing: 1.4pt; margin: 0 0 2pt; }
+  h1 { font-size: 22pt; line-height: 1.12; margin: 0 0 8pt; }
+  .lead { margin: 0 0 12pt; color: #3a4655; }
+
+  .wwh { display: flex; border: .75pt solid #d7dde4; border-radius: 5pt; margin-bottom: 14pt; }
+  .wwh > div { flex: 1; padding: 7pt 9pt 9pt; }
+  .wwh > div + div { border-left: .75pt solid #d7dde4; }
+  .label { color: #ef7d10; font-size: 6pt; letter-spacing: 1.2pt; margin-bottom: 3pt; }
+  .wwh p { margin: 0; font-size: 8.4pt; }
+  .line { border-bottom: .75pt solid #26303f; width: 72%; height: 12pt; }
+
+  .cols { display: flex; gap: 22pt; }
+  .cols > div { flex: 1; }
+  h2 { font-size: 10.5pt; margin: 0 0 7pt; padding-bottom: 4pt; border-bottom: 1.5pt solid #ef7d10; }
+  .cols p { margin: 0 0 7pt; font-size: 9pt; }
+  ul { margin: 0; padding-left: 12pt; list-style: none; }
+  li { position: relative; margin-bottom: 5pt; font-size: 9pt; }
+  li::before { content: "●"; color: #ef7d10; position: absolute; left: -11pt; font-size: 6.5pt; top: 1pt; }
+
+  .practices { margin-top: 18pt; }
+  .prow { display: flex; align-items: center; margin-bottom: 5pt; }
+  .yr { color: #fff; font-size: 6pt; letter-spacing: 1pt; text-align: center; width: 136pt; padding: 3.5pt 0; border-radius: 2.5pt; margin-right: 10pt; }
+  .y1 { background: #3f6d8e; } .y2 { background: #b7791f; }
+  .pr { font-size: 8.3pt; }
+  .pr .dot { color: #8d9db7; font-weight: 400; padding: 0 3pt; }
+  .pr .sm { font-family: "Liberation Sans", Arial, sans-serif; font-weight: 400; font-size: 7.6pt; color: #3a4655; }
+  .note { font-style: italic; font-size: 7pt; color: #526273; margin: 2pt 0 0; }
+
+  .callout { background: #26303f; color: #fff; border-radius: 6pt; padding: 12pt 15pt; margin: 18pt 0 16pt; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 10.6pt; line-height: 1.35; }
+  .callout span { color: #ef7d10; }
+
+  .close { display: flex; justify-content: space-between; align-items: flex-end; }
+  .close p { margin: 0; font-size: 8.8pt; }
+  .sig { font-size: 10.5pt; margin: 1pt 0 2pt !important; }
+  .fac { font-size: 7.3pt !important; color: #526273; }
+  .rsvp { text-align: right; font-size: 7.8pt; color: #526273; }
+  .rsvp div { margin-top: 4pt; }
+  .rsvp .line { display: inline-block; width: 92pt; height: 9pt; vertical-align: bottom; margin-left: 3pt; }
+
+  footer { position: absolute; bottom: 0; left: 0; right: 0; background: #f3f5f7; border-top: .75pt solid #d7dde4; padding: 7pt 36pt; display: flex; justify-content: space-between; font-size: 6.6pt; color: #526273; }
+  footer b { color: #26303f; font-family: "Poppins", sans-serif; }
+  footer .url { color: #ef7d10; font-family: "Poppins", sans-serif; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="brand">FAIRCREEK <span>CHURCH</span></div>
+  <div class="tag">ADULT SPIRITUAL FORMATION</div>
+</div>
+
+<main>
+  <p class="eyebrow">AN INVITATION FROM PASTOR MATT</p>
+  <h1>Come Help Us Discover What<br/>Faircreek Adults Need</h1>
+  <p class="lead">We're beginning to imagine how Faircreek can strengthen adult spiritual formation — not merely by adding another class, but by building a reproducible <b>pathway</b> that helps adults learn and practice the rhythms of life with Christ. Before we decide anything, we want to gather spiritually mature leaders and potential teachers to discern the real needs of our church and to notice where God may already be equipping people to serve. <b>Would you come and explore it with us?</b></p>
+
+  <div class="wwh">
+    <div><div class="label">WHO</div><p>Elders &amp; wives, former elders, deacon-like leaders, and potential teachers</p></div>
+    <div><div class="label">WHEN</div><div class="line"></div><div class="line"></div></div>
+    <div><div class="label">WHERE</div><div class="line"></div><div class="line"></div></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Before You Come</h2>
+      <p>No homework — just a few quiet minutes of prayerful thought. We'll begin the meeting by writing down our reflections, so come having pondered:</p>
+      <ul>
+        <li>Where do you sense a Holy-Spirit-led need for adult spiritual growth at Faircreek — and what would you suggest?</li>
+        <li>Where do you believe you could make an impact?</li>
+        <li>What are you burdened to teach, model, or facilitate?</li>
+        <li>What resources come to mind that you'd want to use if you taught a piece of this?</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What Participation Means</h2>
+      <p>This is <b>exploratory</b>. Saying no is an honorable outcome. Saying yes does not mean immediate teaching.</p>
+      <p>The pilot may involve short (three- to six-week) modules, co-leaders, and reviewed resources. <b>Leaders teach from their own passion and strength</b> — the church offers possible resources and a simple template; you make the choices.</p>
+      <p>Notes are gathered along the way so Faircreek can build a repeatable pathway for years to come.</p>
+    </div>
+  </div>
+
+  <div class="practices">
+    <h2>The Practices We'll Explore</h2>
+    <div class="prow"><div class="yr y1">YEAR ONE · ROOTED</div>
+      <div class="pr">Apprenticeship / The Way<span class="dot">·</span>Scripture<span class="dot">·</span>Prayer<span class="dot">·</span>Community</div></div>
+    <div class="prow"><div class="yr y2">YEAR TWO · SENT</div>
+      <div class="pr">Serving<span class="dot">·</span>Personal Testimony / Witness <span class="sm">(incl. baptism)</span><span class="dot">·</span>Generosity</div></div>
+    <p class="note">Classic practices such as Sabbath, solitude, and fasting are under review — and leaders' passions may add more.</p>
+  </div>
+
+  <div class="callout">If God is stirring something in you, He may well be <span>preparing you to do something about it.</span> Come, pray, and listen with us.</div>
+
+  <div class="close">
+    <div>
+      <p>Grateful for you,</p>
+      <p class="sig">Pastor Matt</p>
+      <p class="fac">This first gathering will be facilitated by Steve Thorsen.</p>
+    </div>
+    <div class="rsvp">
+      <div>Please RSVP to <span class="line"></span></div>
+      <div>by <span class="line"></span></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div><b>Building a Formation Pathway</b> &nbsp;·&nbsp; See the working sketch: <span class="url">snthor-phd.github.io/FCC-Building-an-ASF-Pathway</span></div>
+  <div>Faircreek Church &nbsp;·&nbsp; Fairborn, OH</div>
+</footer>
+</body>
+</html>
